@@ -2,19 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <title>Hello Adonis</title>
   {{ style('style') }}
 </head>
 <body>
-  <section>
-    <div class="logo"></div>
-    <div class="title"></div>
-    <div class="subtitle">
-      <p>AdonisJs simplicity will make you feel confident about your code</p>
-      <p>
-        Don't know where to start? Read the <a href="https://adonisjs.com/docs">documentation</a>.
-      </p>
-    </div>
-  </section>
+ <div id="app">
+   <div class="container">
+     <div class="row">
+       
+       <div class="col-md-6">
+          <div class="card">
+
+              <h5 class="card-header info-color white-text text-center py-4">
+                  <strong>Sign up</strong>
+              </h5>
+          
+              <!--Card content-->
+              <div class="card-body px-lg-5 pt-0">
+          
+                  <!-- Form -->
+                  <form class="text-center" style="color: #757575;" action="#!">
+          
+                              <!-- First name -->
+                      <div class="md-form">
+                          <input type="text" id="materialRegisterFormFirstName" class="form-control">
+                          <label for="materialRegisterFormFirstName">Subject</label>
+                      </div>
+          
+                      <!-- E-mail -->
+                      <div class="md-form mt-0">
+                          <input type="email" id="materialRegisterFormEmail" class="form-control">
+                          <label for="materialRegisterFormEmail">To :</label>
+                      </div>
+          
+                      <!-- Password -->
+                      <div class="md-form">
+                          <textarea name="" id="" cols="30" rows="10"></textarea>
+                      </div>        
+          
+                  </form>
+                  <!-- Form -->
+          
+              </div>
+          
+          </div>
+       </div>
+
+       <div class="col-md-6">
+
+       </div>
+     </div>
+   </div>
+  <!-- Material form register -->
+
+<!-- Material form register -->
+  <div>
 </body>
 </html>

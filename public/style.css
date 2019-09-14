@@ -90,3 +90,12 @@ p {
     transform: none;
   }
 }
+
+
+.app{
+  overflow : hidden
+}
+
+.row{
+  margin-top : 50px;
+}
