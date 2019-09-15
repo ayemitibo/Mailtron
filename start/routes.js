@@ -16,4 +16,7 @@
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
 const Route = use('Route')
 
+Route.post('app/sendMail', 'MailController.sendMail')
+Route.get('app/sendMail', 'MailController.getMail')
+
 Route.on('/').render('welcome')
