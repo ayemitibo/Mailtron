@@ -99,3 +99,63 @@ p {
 .row{
   margin-top : 50px;
 }
+
+.form-control{
+  background: transparent;
+    border: none;
+    border-bottom: 1px solid #220052;
+    outline: none;
+    border-radius: 0 !important;
+}
+
+textarea{
+    overflow: auto;
+    margin-top: 20px;
+    resize: vertical;
+    width: 100%;
+    background: transparent;
+    border: 1px dotted #220052;
+    border-radius: 10px 5px;
+}
+
+.m-20{
+  margin-top: 20px;
+}
+
+[type=submit]:not(:disabled), button:not(:disabled) {
+  cursor: pointer;
+  width: 100%;
+  padding: 15px 0px;
+  border: 1px solid gray;
+  margin-top: 30px;
+  border-radius: 20px;
+  background-color: #220052;
+  color: white;
+  font-weight: 900;
+  font-size: 17px;
+  /* font-family: inherit; */
+}
+
+label{
+    font-weight: 600;
+    color: black;
+}
+strong{
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: black;
+}
+
+.shadow {
+  /* box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; */
+  min-height: 200px;
+  background-color: white;
+  text-align: center;
+  /* margin-top: auto; */
+  width: 100%;
+  background: #fff;
+  box-shadow: 12px 15px 20px 0px rgba(46,61,73,0.15);
+  border-radius: 0.375rem;
+}
+
