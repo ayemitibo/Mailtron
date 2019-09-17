@@ -8,10 +8,10 @@
 </head>
 <body>
  <div id="app">
-   <div class="container">
+   <div class="container-fluid">
      <div class="row">
        
-       <div class="col-md-6">
+       <div class="col-md-5">
           <div class="card">
 
               <h5 class="card-header info-color white-text text-center py-4">
@@ -27,24 +27,24 @@
                               <!-- First name -->
                       <div class="md-form m-20">
                         <label for="materialRegisterFormFirstName">Subject</label>
-                          <input type="text" id="materialRegisterFormFirstName" class="form-control">
+                          <input type="text" id="materialRegisterFormFirstName" class="form-control inputLabel">
                       </div>
                       
                       <div class="md-form mt-5">
                         <label for="materialRegisterFormEmail">From :</label>
-                          <input type="email" id="materialRegisterFormEmail" class="form-control">
+                          <input type="email" id="materialRegisterFormEmail" class="form-control inputLabel">
                       </div>
 
                       <!-- E-mail -->
                       <div class="md-form mt-5">
                         <label for="materialRegisterFormEmail">To :</label>
-                          <input type="email" id="materialRegisterFormEmail" class="form-control">
+                          <input type="email" id="materialRegisterFormEmail" class="form-control inputLabel">
                       </div>
           
                       <!-- Password -->
                       <div class="md-form mt-5">
                           <label for="materialRegisterFormEmail">Message Label :</label>
-                          <textarea name="" id="" cols="30" rows="10"></textarea>
+                          <textarea name="" id="" cols="30" rows="10" class="inputLabel"></textarea>
                       </div>        
                       
                       <input type="submit" value="Send Message">
@@ -56,7 +56,9 @@
           </div>
        </div>
 
-       <div class="col-md-6">
+       <div class="col-md-2"></div>
+
+       <div class="col-md-5">
         <div class="card shadow">
 
           <h5 class="card-header info-color white-text text-center py-4">
@@ -72,27 +74,26 @@
                           <!-- First name -->
                   <div class="md-form m-20">
                     <label for="materialRegisterFormFirstName">Subject</label>
-                      <input type="text" id="materialRegisterFormFirstName" class="form-control">
+                      <p class="message">The subject review should show here</p>
                   </div>
                   
                   <div class="md-form mt-5">
                     <label for="materialRegisterFormEmail">From :</label>
-                      <input type="email" id="materialRegisterFormEmail" class="form-control">
+                      <p class="message">Ayemitiboabiodun@gmail.com</p>
                   </div>
 
                   <!-- E-mail -->
                   <div class="md-form mt-5">
                     <label for="materialRegisterFormEmail">To :</label>
-                      <input type="email" id="materialRegisterFormEmail" class="form-control">
+                      <p class="message">Fabulouscodes1@gmail.com</p>
                   </div>
       
                   <!-- Password -->
                   <div class="md-form mt-5">
                       <label for="materialRegisterFormEmail">Message Label :</label>
-                      <textarea name="" id="" cols="30" rows="10"></textarea>
+                      <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam accusantium voluptate veritatis. Quasi exercitationem consectetur, commodi, quibusdam iusto hic minima harum, amet fugit dolorum eveniet voluptatibus. Possimus qui obcaecati nostrum!</p>
                   </div>        
                   
-                  <input type="submit" value="Send Message">
               </form>
               <!-- Form -->
       
@@ -105,5 +106,18 @@
 
 <!-- Material form register -->
   <div>
+    <script>
+       let messageReview = document.getElementsByClassName("message")
+        
+        let inputLabel = document.querySelectorAll(".inputLabel")
+
+        // console.log(inputLabel)
+
+        inputLabel.forEach((label,index) => {
+          label.addEventListener("input",event => {
+              messageReview[index].textContent = event.target.value
+          })
+        })
+    </script>
 </body>
 </html>
